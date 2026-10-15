@@ -7,6 +7,10 @@ android {
     namespace = "com.londkirs.deviceinfo"
     compileSdk = 35
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.londkirs.deviceinfo"
         minSdk = 26
