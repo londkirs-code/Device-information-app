@@ -77,7 +77,7 @@ class MainActivity : Activity() {
 
         search = EditText(this).apply {
             hint = "Search installed apps"
-            singleLine = true
+            setSingleLine(true)
             visibility = View.GONE
             setPadding(dp(16), dp(4), dp(16), dp(4))
             addTextChangedListener(SimpleTextWatcher { filterApps(it) })
